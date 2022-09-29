@@ -1,0 +1,84 @@
+golang-golang-x-image (0.0~git20210628.a66eb64-1) unstable; urgency=medium
+
+  * New upstream version 0.0~git20210628.a66eb64
+  * Apply "cme fix dpkg" fixes to debian/control
+    - Update debhelper dependency to "Build-Depends: debhelper-compat (= 13)"
+    - Bump Standards-Version to 4.6.0 (no change)
+  * Change Section from devel to golang
+  * Mark library package with "Multi-Arch: foreign"
+  * Bump dependency on golang-golang-x-text-dev to (>= 0.3.6)
+
+ -- Anthony Fok <foka@debian.org>  Tue, 12 Oct 2021 03:32:41 -0600
+
+golang-golang-x-image (0.0~git20200119.58c2397-1) unstable; urgency=medium
+
+  * New upstream version 0.0~git20200119.58c2397
+  * debian/gbp.conf: Set debian-branch to debian/sid for DEP-14 conformance
+  * Bump debhelper dependency to "Build-Depends: debhelper-compat (= 12)"
+  * Bump Standards-Version to 4.5.0 (no change)
+  * Add "Rules-Requires-Root: no" to debian/control
+
+ -- Anthony Fok <foka@debian.org>  Fri, 21 Feb 2020 06:13:07 -0700
+
+golang-golang-x-image (0.0~git20190703.d6a02ce-1) unstable; urgency=medium
+
+  * New upstream version 0.0~git20190703.d6a02ce
+
+ -- Anthony Fok <foka@debian.org>  Sat, 27 Jul 2019 21:38:57 -0600
+
+golang-golang-x-image (0.0~git20190321.3fc05d4+really0.0~git20190321.3fc05d4-1) unstable; urgency=medium
+
+  * Revert to upstream version 0.0~git20190321.3fc05d4 now that Debian 10
+    "buster" is released.  See https://bugs.debian.org/928227 for background
+    information.
+  * Bump Standards-Version to 4.4.0 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Thu, 11 Jul 2019 23:35:15 -0600
+
+golang-golang-x-image (0.0~git20190321.3fc05d4+really0.0~git20181116.cd38e80-1) unstable; urgency=medium
+
+  * Revert all changes between 0.0~git20181116.cd38e80-1
+    and 0.0~git20190321.3fc05d4-1, resulting in an absurd version number.
+    See https://bugs.debian.org/928227 for a rationale.
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Sun, 02 Jun 2019 22:27:49 +0200
+
+golang-golang-x-image (0.0~git20190321.3fc05d4-1) unstable; urgency=medium
+
+  * New upstream version 0.0~git20190321.3fc05d4
+  * Bump Standards-Version to 4.3.0 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Sun, 14 Apr 2019 03:50:08 -0600
+
+golang-golang-x-image (0.0~git20181116.cd38e80-1) unstable; urgency=medium
+
+  * New upstream version 0.0~git20181116.cd38e80
+  * Update Maintainer email address to team+pkg-go@tracker.debian.org
+  * Bump Standards-Version to 4.2.1 (no change)
+  * Update Build-Depends on dh-golang to (>= 1.31~)
+    which install testdata directory contents by default, thus the
+    DH_GOLANG_INSTALL_EXTRA is no longer needed in debian/rules
+  * Add debian/watch (direct access to the git repository)
+  * Add lintian overrides on font/testdata/ files
+
+ -- Anthony Fok <foka@debian.org>  Thu, 20 Dec 2018 23:42:33 -0700
+
+golang-golang-x-image (0.0~git20180403.f315e44-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Anthony Fok ]
+  * New upstream version 0.0~git20180403.f315e44
+  * Apply "cme fix dpkg" fixes to debian/control
+    Bumping Standards-Version to 4.1.4, etc.
+  * Use debhelper (>= 11)
+  * Add myself to the list of Uploaders
+
+ -- Anthony Fok <foka@debian.org>  Wed, 09 May 2018 22:17:34 -0600
+
+golang-golang-x-image (0.0~git20170523.0.426cfd8-1) unstable; urgency=medium
+
+  * Initial release (Closes: #867788)
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Fri, 21 Jul 2017 22:14:36 +0200
